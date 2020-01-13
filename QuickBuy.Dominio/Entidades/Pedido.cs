@@ -5,7 +5,7 @@ using System.Text;
 
 namespace QuickBuy.Dominio.Entidades
 {
-    public class Pedido
+    public class Pedido : Entidades
     {
         public int Id { get; set; }
         public DateTime DataPedido { get; set; }
@@ -20,6 +20,9 @@ namespace QuickBuy.Dominio.Entidades
         public int FormaPagamentoId { get; set; }
         public FormaPagamento FormaPagamento { get; set; }
 
-
+        public override void Validate()
+        {
+            
+        }
     }
 }
