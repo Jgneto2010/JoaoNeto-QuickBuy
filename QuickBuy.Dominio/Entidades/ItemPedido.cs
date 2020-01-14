@@ -14,5 +14,10 @@ namespace QuickBuy.Dominio.Entidades
         {
             throw new NotImplementedException();
         }
+
+        internal static bool Any()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
