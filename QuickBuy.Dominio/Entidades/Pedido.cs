@@ -23,11 +23,14 @@ namespace QuickBuy.Dominio.Entidades
         public override void Validate()
         {
             LimparMensagemValidacao();
+            
             if (!ItemPedido.Any())
             AdicionarCritica("Pedido está vazio");
 
             if (string.IsNullOrEmpty(Cep))
                 AdicionarCritica("CEP deve ser preenchido");
+            if (FormaPagamentoId == 0)
+                AdicionarCritica("Informe a forma de pagamento");
 
         }
     }
